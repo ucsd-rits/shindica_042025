@@ -19,7 +19,7 @@ ENV DEBCONF_NOWARNINGS="yes"
 #    curl wget vim git htop \
 #    && rm -rf /var/lib/apt/lists/*
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends libxcb-cursor0 \
+    apt-get install -y --no-install-recommends libxcb-cursor0 libxcb-randr0-dev libxcb-keysyms1 libxcb-icccm4 \
     && rm -rf /var/lib/apt/lists/*
 
 # Set up working directory
