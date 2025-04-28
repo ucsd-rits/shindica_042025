@@ -20,6 +20,7 @@ ENV DEBCONF_NOWARNINGS="yes"
 #    && rm -rf /var/lib/apt/lists/*
 RUN apt-get update && \
     apt-get install -y --no-install-recommends libxcb-cursor0 libxcb-randr0-dev libxcb-keysyms1 libxcb-icccm4 \
+    libxcb-dev libxcb-cursor0-dev libxcb-randr0 libxcb-keysyms1-dev libxcb-icccm4-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Set up working directory
