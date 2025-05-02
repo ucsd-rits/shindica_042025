@@ -20,7 +20,7 @@ ENV DEBCONF_NOWARNINGS="yes"
 #    && rm -rf /var/lib/apt/lists/*
 RUN apt-get update && \
     apt-get install -y libxcb-cursor0 libxcb-randr0-dev libxcb-keysyms1 libxcb-icccm4 \
-    libxcb-keysyms1-dev libxcb-icccm4-dev libx11-xcb-dev libxcb-xinerama0 \
+    libxcb-keysyms1-dev libxcb-icccm4-dev libx11-xcb-dev libxcb-xinerama0 python3.8-venv \
     && rm -rf /var/lib/apt/lists/*
 
 # Set up working directory
